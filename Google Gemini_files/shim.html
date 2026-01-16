@@ -1,0 +1,2446 @@
+<!DOCTYPE html>
+<!-- saved from url=(0132)blob:https://5ui6js0zue3n5dipkgcocq34dsz82j9n82y9ae0zzq2vre50ml-h852644758.scf.usercontent.goog/02969d10-54d6-4d6c-bd4a-8d966604fec0 -->
+<html lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6ImE3ZTI3MWMzMmJkMTBkY2EwNTExOThmNjkwNjc3MGEzN2Q0MmRhM2IiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwNDU4OTk0MDY5MDA0NTkzNjAxMyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2Y2MzkzZmFhZGI2YTBiODBfaW5kZXguaHRtbC03ODkifSwiZXhwIjoxNzY4NTkwMjA0LCJpYXQiOjE3Njg1ODY2MDQsImFsZyI6IlJTMjU2In0.W5Fduw46X-K_esUjdfCJsZ8WTgET9XOjC9EQVVHp18S69wyqWrp_ddQCsMeG1w1aCOoESvUT78g2570bTITC5OkLy9-Anm9bwR--huHci0U_GY34blFBjBgFZ3bAAk8b-_Oppx3uNwQvISpAzj3IB_VjYiHDkMXKqJBkpYtfW8wYE75jiZtXX2LDfQ0otuQ6MYyOclAMbkqSBCwsRJkBm9NHGkqJn3gukpMdM1Ol7-gDx62_47-9VEF9RmYlAj-ORK_JDq-CPkmjEXsSQqLzluUkmtKVm4M5w75450g4Y6GvE5oN4UzrF2W1B5B8R3lp2elhFj8BUqw-JWhdGjQ2TA","c_f6393faadb6a0b80_index.html-789")</script><script>'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){const d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);const c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{let a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){const b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{const c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){const c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{const c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){const c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);const e=yield c.blob();return new Promise((f,g)=>{const k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){let c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){const c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());let e;try{const f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){const b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");const c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;let c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){const c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{let g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){const g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){const b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{const e=d?(new URL(b,d||void 0)).toString():b;let f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){const [c,,e]=ia.exec(d)||[],f=c,g=e;if(!g)return"";if(g===b)return`src: ${f};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;const c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c;const e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){const d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){const d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){let d=a.cssText;const c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){let g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];const b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){const d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){const g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}const d=new Set;b(a);return d}function ua(a,b){return t(function*(){const d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){const d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){const c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b);var e=yield wa(a,b);e=yield B(e);const f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=
+16384));f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;const c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){const a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){let b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){const b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+</script><script>(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script>
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script>((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-2.5-flash-preview-09-2025","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-2.5-flash-image-preview","imageTransformModelName":"gemini-3-pro-image-preview-11-2025","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"]})</script><script>(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    
+    <!-- 視窗設定：禁止縮放，適應瀏海屏 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>全能記帳本</title>
+    
+    <!-- PWA 設定 -->
+    <meta name="theme-color" content="#2196F3">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="application-name" content="全能記帳本">
+    
+    <!-- App Icon (使用 CDN 連結) -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/5501/5501375.png">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/5501/5501375.png">
+
+    <!-- 內嵌 Web App Manifest (Data URI 格式，免額外檔案) -->
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoi5YWo6IO96KiY5uQl5pysIiwic2hvcnRfbmFtZSI6IuiomObkJeacrCIsImRlc2NyaXB0aW9uIjoi5YCL5Lq66ZuIy6a/uOaWh+aXpeWujOeIvuWcsiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwic3RhcnRfdXJsIjoiLiIsImJhY2tncm91bmRfY29xvciI6IiNmNWY3ZmEiLCJ0aGVtZV9jb2xvciI6IiMyMTk2RjMiLCJpY29ucyI6W3sic3JjIjoiaHR0cHM6Ly9jZG4taWNvbnMtcG5nLmZsYXRpY29uLmNvbS81MTIvNTUwMS81NTAxMzc1LnBuZyIsInNpemVzIjoiNTEyeDUxMiIsInR5cGUiOiJpbWFnZS9wbmcifV19">
+
+    <!-- 外部資源 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --primary: #2196F3;
+            --expense: #E91E63;
+            --income: #4CAF50;
+            --warning: #FF9800;
+            --bg: #f5f7fa;
+            --nav-height: 65px;
+            /* 安全區域變數 */
+            --safe-top: env(safe-area-inset-top);
+            --safe-bottom: env(safe-area-inset-bottom);
+        }
+        
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            background: var(--bg); 
+            margin: 0; 
+            padding-top: var(--safe-top);
+            padding-bottom: calc(var(--nav-height) + var(--safe-bottom) + 20px); 
+            color: #333; 
+            user-select: none; /* 類似原生 APP 不讓選取文字 */
+            overflow-x: hidden;
+        }
+        
+        /* 標題欄 */
+        .header { 
+            background: white; 
+            padding: 15px; 
+            text-align: center; 
+            font-weight: bold; 
+            font-size: 18px;
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+        }
+        
+        /* Loading 條 */
+        .loading-bar { height: 3px; width: 100%; background: #e0e0e0; display: none; position: absolute; bottom: 0; left: 0; }
+        .loading-progress { height: 100%; background: var(--primary); width: 0%; animation: load 1s infinite; }
+        @keyframes load { 0% {width: 0%;} 100% {width: 100%;} }
+
+        /* 頁面切換 */
+        .page { display: none; padding: 15px; max-width: 800px; margin: auto; animation: fadeIn 0.2s ease-out; }
+        .page.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* 通用卡片 */
+        .card { background: white; padding: 20px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 15px; transition: 0.3s; }
+        
+        /* 月份篩選器 */
+        .month-filter-container { text-align: center; margin-bottom: 15px; background: white; padding: 8px; border-radius: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); display: inline-block; position: relative; left: 50%; transform: translateX(-50%); }
+        .month-filter-input { font-size: 16px; border: none; font-weight: bold; color: #555; background: transparent; outline: none; text-align: center;}
+
+        /* 首頁儀表板 */
+        .dashboard { display: flex; gap: 10px; margin-bottom: 20px; }
+        .stat-box { flex: 1; background: white; padding: 15px 10px; border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .stat-label { font-size: 12px; color: #888; margin-bottom: 5px; }
+        .stat-val { font-size: 16px; font-weight: bold; word-break: break-all; }
+
+        /* 首頁大按鈕 */
+        .add-btn-container { display: flex; gap: 15px; margin-bottom: 25px; }
+        .add-btn-main { flex: 1; padding: 18px; border-radius: 16px; border: none; color: white; font-size: 16px; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); cursor: pointer; transition: transform 0.1s; }
+        .add-btn-main:active { transform: scale(0.96); }
+        .btn-exp { background: linear-gradient(135deg, #FF7043, #E91E63); }
+        .btn-inc { background: linear-gradient(135deg, #66BB6A, #4CAF50); }
+
+        /* 彈窗 (Modal) */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 1000; display: none; align-items: flex-end; backdrop-filter: blur(2px); }
+        .modal-overlay.open { display: flex; }
+        .modal-content { background: white; width: 100%; border-radius: 24px 24px 0 0; padding: 25px 20px; box-sizing: border-box; animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1); max-height: 90vh; overflow-y: auto; padding-bottom: calc(20px + var(--safe-bottom)); }
+        @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+        
+        .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .modal-title { font-size: 20px; font-weight: bold; }
+        .close-modal { font-size: 24px; color: #999; cursor: pointer; padding: 10px; margin: -10px; }
+
+        /* 輸入元件 */
+        .input-label { font-size: 13px; color: #666; margin-top: 15px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; font-weight: 500; }
+        input, select { width: 100%; padding: 14px; margin: 0; border: 1px solid #eee; background: #f9f9f9; border-radius: 12px; box-sizing: border-box; font-size: 16px; outline: none; transition: 0.2s; -webkit-appearance: none; }
+        input:focus { border-color: var(--primary); background: white; }
+        #amount { font-size: 28px; font-weight: bold; color: #333; text-align: center; letter-spacing: 1px; }
+
+        .btn-save { width: 100%; padding: 16px; background: var(--primary); color: white; border: none; border-radius: 12px; font-weight: bold; font-size: 16px; margin-top: 20px; cursor: pointer; box-shadow: 0 4px 10px rgba(33, 150, 243, 0.3); }
+        .btn-save:active { opacity: 0.9; transform: scale(0.99); }
+        .btn-delete-record { background: white; border: 1px solid #ddd; color: #FF5252; margin-top: 10px; box-shadow: none; }
+        
+        /* 排序按鈕 */
+        .sort-btn { font-size: 12px; color: var(--primary); cursor: pointer; border: 1px solid var(--primary); padding: 4px 10px; border-radius: 15px; background: transparent; }
+        .sort-btn.active { background: var(--primary); color: white; }
+
+        /* 定期記帳模式切換 */
+        .recur-mode-switch { display: flex; gap: 10px; margin-bottom: 15px; background: #eee; padding: 4px; border-radius: 12px; }
+        .mode-option { flex: 1; padding: 10px; text-align: center; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 500; color: #666; transition: 0.2s; }
+        .mode-option.active { background: white; color: var(--primary); box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+
+        /* 分類圖示網格 */
+        .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 15px; }
+        .cat-item { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px 5px; border: 2px solid transparent; border-radius: 14px; cursor: pointer; transition: 0.2s; background: #fff; position: relative; }
+        .cat-item i { font-size: 22px; margin-bottom: 6px; color: #bbb; transition: 0.2s; }
+        .cat-item span { font-size: 12px; color: #888; font-weight: 500; }
+        
+        /* 排序抖動動畫 */
+        .category-grid.sorting .cat-item { border: 1px dashed #ccc; animation: shake 0.3s infinite; }
+        @keyframes shake { 0% { transform: rotate(0deg); } 25% { transform: rotate(1deg); } 75% { transform: rotate(-1deg); } }
+
+        .cat-item.active { background: #e3f2fd; transform: translateY(-2px); }
+        .cat-item.active i { color: var(--primary); }
+        .cat-item.active span { color: var(--primary); font-weight: bold; }
+        
+        /* 支出收入不同色 */
+        .cat-item.active[data-type="expense"] { background: #ffebee; }
+        .cat-item.active[data-type="expense"] i, .cat-item.active[data-type="expense"] span { color: var(--expense); }
+        .cat-item.active[data-type="income"] { background: #e8f5e9; }
+        .cat-item.active[data-type="income"] i, .cat-item.active[data-type="income"] span { color: var(--income); }
+
+        /* 列表樣式 */
+        .date-header { font-size: 13px; font-weight: bold; color: #888; margin: 25px 0 8px 10px; display: flex; align-items: center; }
+        .date-header::after { content: ''; flex: 1; height: 1px; background: #eee; margin-left: 10px; }
+        
+        .record-group { background: white; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); overflow: hidden; margin-bottom: 5px; }
+        .record-item { background: white; padding: 16px 15px; border-bottom: 1px solid #f5f5f5; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: 0.1s; }
+        .record-item:active { background: #f9f9f9; }
+        .record-item:last-child { border-bottom: none; }
+        
+        .drag-handle { color: #ddd; cursor: grab; padding: 10px; font-size: 18px; margin-right: 5px; display: flex; align-items: center; }
+        .drag-handle:active { color: var(--primary); }
+
+        .rec-icon { width: 38px; height: 38px; border-radius: 50%; background: #f0f2f5; display: flex; align-items: center; justify-content: center; margin-right: 15px; color: #666; font-size: 16px; }
+        .rec-info { flex: 1; }
+        .rec-name { font-weight: bold; font-size: 15px; color: #333; margin-bottom: 3px; display: block; }
+        .rec-meta { font-size: 12px; color: #999; }
+        .amt { font-weight: bold; font-size: 17px; }
+        .amt.expense { color: var(--expense); }
+        .amt.income { color: var(--income); }
+        
+        .sortable-ghost { opacity: 0.5; background: #e3f2fd; }
+
+        /* 統計圖表樣式 */
+        .chart-filter { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 20px; background: #fff; padding: 12px; border-radius: 12px; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .chart-filter input { width: auto; margin: 0; padding: 6px; font-size: 14px; background: #f5f5f5; border: none; }
+
+        .chart-layout { display: flex; align-items: center; gap: 15px; margin-bottom: 25px; }
+        .chart-box { flex: 3; position: relative; height: 220px; }
+        .summary-col { flex: 2; display: flex; flex-direction: column; gap: 10px; }
+        
+        @media (max-width: 360px) {
+            .chart-layout { flex-direction: column; }
+            .chart-box { width: 100%; height: 200px; }
+            .summary-col { width: 100%; flex-direction: row; }
+        }
+
+        .summary-card { background: white; padding: 12px; border-radius: 12px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .sc-label { font-size: 12px; color: #888; margin-bottom: 4px; }
+        .sc-val { font-weight: bold; font-size: 15px; }
+
+        /* 統計列表 */
+        .stat-list { margin-top: 10px; }
+        .stat-item-container { border-bottom: 1px solid #f0f0f0; }
+        .stat-item { display: flex; align-items: center; padding: 15px 5px; cursor: pointer; transition: 0.1s; }
+        .stat-item:active { background: #fafafa; }
+        .stat-item.active { background: #f5f9ff; }
+        
+        .stat-icon { width: 34px; height: 34px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; margin-right: 12px; font-size: 16px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .stat-info { flex: 1; }
+        .stat-row-1 { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+        .stat-name { font-weight: bold; font-size: 15px; color: #333; }
+        .stat-amount { font-weight: bold; font-size: 15px; }
+        
+        .stat-bar-bg { width: 100%; height: 6px; background: #eee; border-radius: 3px; overflow: hidden; }
+        .stat-bar-fill { height: 100%; border-radius: 3px; width: 0%; transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
+        
+        .accordion-content { display: none; background: #fafafa; padding: 10px 20px; border-top: 1px solid #eee; }
+        .acc-row { display: flex; justify-content: space-between; padding: 8px 0; font-size: 13px; border-bottom: 1px solid #eee; color: #555; }
+        .acc-row:last-child { border-bottom: none; }
+        .acc-date { color: #999; width: 110px; }
+
+        /* 定期規則 */
+        .recurring-rule { border-left: 4px solid #bbb; margin-bottom: 10px; }
+        .rule-badge { background: #eee; font-size: 10px; padding: 3px 8px; border-radius: 6px; color: #666; font-weight: bold; vertical-align: middle; margin-left: 5px; }
+
+        /* 底部導航 */
+        .bottom-nav { position: fixed; bottom: 0; width: 100%; height: calc(var(--nav-height) + var(--safe-bottom)); background: white; display: flex; border-top: 1px solid #f0f0f0; z-index: 200; padding-bottom: var(--safe-bottom); box-shadow: 0 -2px 10px rgba(0,0,0,0.03); }
+        .nav-btn { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #bbb; font-size: 11px; cursor: pointer; transition: 0.2s; }
+        .nav-btn.active { color: var(--primary); transform: translateY(-2px); }
+        .nav-btn i { font-size: 22px; margin-bottom: 4px; }
+        
+        .mode-badge { font-size: 10px; padding: 2px 6px; border-radius: 4px; background: #eee; color: #666; vertical-align: middle; margin-left: 5px; }
+        .mode-cloud { background: #e3f2fd; color: #2196F3; }
+        .mode-local { background: #fff3e0; color: #ff9800; }
+        
+        .d-none { display: none !important; }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    📒 全能記帳本 <span id="modeBadge" class="mode-badge mode-cloud">雲端同步</span>
+    <div class="loading-bar" id="loadingBar" style="display: none;"><div class="loading-progress"></div></div>
+</div>
+
+<!-- Setup Alert -->
+<div id="setup-alert" class="card" style="background: rgb(255, 243, 205); color: rgb(133, 100, 4); display: none; margin: 15px;">
+    <i class="fas fa-info-circle"></i> <b>目前使用本機儲存</b><br>
+    如需雲端同步，請在程式碼下方填入 Google Apps Script 網址。
+</div>
+
+<!-- ================= 頁面 1: 記帳首頁 ================= -->
+<div id="page-home" class="page active">
+    
+    <!-- 月份篩選 -->
+    <div class="month-filter-container">
+        <label><i class="fas fa-calendar-alt" style="color:var(--primary)"></i></label>
+        <input type="month" id="monthFilter" class="month-filter-input" onchange="renderWithFilter()">
+    </div>
+
+    <!-- 儀表板 -->
+    <div class="dashboard">
+        <div class="stat-box">
+            <div class="stat-label">總收入</div>
+            <div class="stat-val" id="totalInc" style="color:var(--income)">$53974</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">總支出</div>
+            <div class="stat-val" id="totalExp" style="color:var(--expense)">$42381</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">本月結餘</div>
+            <div class="stat-val" id="totalBal" style="color: var(--income);">+$11593</div>
+        </div>
+    </div>
+
+    <!-- 快速記帳按鈕 -->
+    <div class="add-btn-container">
+        <button class="add-btn-main btn-exp" onclick="openInputModal(&#39;expense&#39;)">
+            <i class="fas fa-minus"></i> 記支出
+        </button>
+        <button class="add-btn-main btn-inc" onclick="openInputModal(&#39;income&#39;)">
+            <i class="fas fa-plus"></i> 記收入
+        </button>
+    </div>
+
+    <!-- 記帳列表 (日期分組) -->
+    <div id="list" style="padding-bottom: 20px;"><div class="date-header"><span>2026-01-28(三)</span></div><div class="record-group" data-date="2026-01-28">
+                <div class="record-item" onclick="editRecord(&#39;d48070a4-a482-4ae8-9564-19d401a122f1&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">備份豆腐頭</div>
+                            <div class="rec-meta">購物</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$933</span>
+                    </div>
+                </div>
+            </div><div class="date-header"><span>2026-01-15(四)</span></div><div class="record-group" data-date="2026-01-15">
+                <div class="record-item" onclick="editRecord(&#39;1c6d8bce-d254-499e-886e-731111502c10&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">足浴袋</div>
+                            <div class="rec-meta">購物</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$1600</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;7d6c35b8-fd00-496d-8156-74a15dd8a634&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-tshirt"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">NET</div>
+                            <div class="rec-meta">治裝</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$1127</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;f7a3f803-9ef7-4fc1-97d1-13499f9eaaa2&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">火鍋</div>
+                            <div class="rec-meta">餐飲</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$180</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;248987c6-d27e-4b44-ae46-8e4b5bff727e&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">星巴克</div>
+                            <div class="rec-meta">餐飲</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$20</span>
+                    </div>
+                </div>
+            </div><div class="date-header"><span>2026-01-11(日)</span></div><div class="record-group" data-date="2026-01-11">
+                <div class="record-item" onclick="editRecord(&#39;c7b68114-602b-4421-ae58-ac37ac2181de&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">早餐</div>
+                            <div class="rec-meta">餐飲</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$74</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;c723aa3c-4ffa-4d59-a0c8-bdec14fdd360&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">晚餐</div>
+                            <div class="rec-meta">餐飲</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$213</span>
+                    </div>
+                </div>
+            </div><div class="date-header"><span>2026-01-10(六)</span></div><div class="record-group" data-date="2026-01-10">
+                <div class="record-item" onclick="editRecord(&#39;096816ee-a61a-4389-9fe2-884b32ce4fe2&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">餐飲</div>
+                            <div class="rec-meta">餐飲</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$88</span>
+                    </div>
+                </div>
+            </div><div class="date-header"><span>2026-01-09(五)</span></div><div class="record-group" data-date="2026-01-09">
+                <div class="record-item" onclick="editRecord(&#39;4818563d-123c-4f8c-8ea7-22f0dfe45064&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">餐飲</div>
+                            <div class="rec-meta">餐飲</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$201</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;d2d9101a-c2d9-404f-b745-99114af06161&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-money-bill-wave"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">獎金+代墊</div>
+                            <div class="rec-meta">薪水</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt income">+$15404</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;df17ed7d-7087-4945-a545-594199e2ea02&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-money-bill-wave"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">加班費</div>
+                            <div class="rec-meta">薪水</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt income">+$1101</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;1fcdab27-1005-4bcf-961b-17c135085ae3&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-money-bill-wave"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">薪水</div>
+                            <div class="rec-meta">薪水</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt income">+$37469</span>
+                    </div>
+                </div>
+            </div><div class="date-header"><span>2026-01-07(三)</span></div><div class="record-group" data-date="2026-01-07">
+                <div class="record-item" onclick="editRecord(&#39;e5406017-7be0-4d17-b233-c0ae0e44b1e0&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">購物</div>
+                            <div class="rec-meta">購物</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$639</span>
+                    </div>
+                </div>
+            </div><div class="date-header"><span>2026-01-06(二)</span></div><div class="record-group" data-date="2026-01-06">
+                <div class="record-item" onclick="editRecord(&#39;26cf0e65-e229-4a76-bdf7-140d335c28c0&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-paw"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">乾乾</div>
+                            <div class="rec-meta">寵物</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$2000</span>
+                    </div>
+                </div>
+            </div><div class="date-header"><span>2026-01-05(一)</span></div><div class="record-group" data-date="2026-01-05">
+                <div class="record-item" onclick="editRecord(&#39;c135f174-090b-4a54-82ba-c13c3164ae98&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-tshirt"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">治裝</div>
+                            <div class="rec-meta">治裝</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$2060</span>
+                    </div>
+                </div>
+            </div><div class="date-header"><span>2026-01-04(日)</span></div><div class="record-group" data-date="2026-01-04">
+                <div class="record-item" onclick="editRecord(&#39;57da6745-d606-47f3-aede-66bbe11f076f&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">購物</div>
+                            <div class="rec-meta">購物</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$1650</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;59f33a68-e901-47b4-9c55-814ef6fb9aa2&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-plane"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">跨年台南行</div>
+                            <div class="rec-meta">旅行</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$12267</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;5826fe80-8d3c-4d4d-a2fa-7b399ee278ae&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">餐飲</div>
+                            <div class="rec-meta">餐飲</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$622</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;adcd402c-3056-4344-bd70-340aac5c439c&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">餐飲</div>
+                            <div class="rec-meta">餐飲</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$84</span>
+                    </div>
+                </div>
+            </div><div class="date-header"><span>2026-01-03(六)</span></div><div class="record-group" data-date="2026-01-03">
+                <div class="record-item" onclick="editRecord(&#39;d972eca8-b5b0-4547-bd7f-2afa02cfa1d5&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-utensils"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">餐飲</div>
+                            <div class="rec-meta">餐飲</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$486</span>
+                    </div>
+                </div>
+            </div><div class="date-header"><span>2026-01-02(五)</span></div><div class="record-group" data-date="2026-01-02">
+                <div class="record-item" onclick="editRecord(&#39;079cd087-af2e-40c4-866f-e9daa15766d2&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">購物</div>
+                            <div class="rec-meta">購物</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$788</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;f59e1645-8c26-4a3e-89b1-44d6d0083660&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">購物</div>
+                            <div class="rec-meta">購物</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$298</span>
+                    </div>
+                </div>
+            </div><div class="date-header"><span>2026-01-01(四)</span></div><div class="record-group" data-date="2026-01-01">
+                <div class="record-item" onclick="editRecord(&#39;26a43cd4-7624-4d6f-b29d-98d5f28fd1a0&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">定期: 信貸</div>
+                            <div class="rec-meta">投資</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$7305</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;0c35affb-48f0-4f0b-8628-7c579c0a842b&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-book"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">分期: 學貸 (1/54)</div>
+                            <div class="rec-meta">教育</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$4802</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;7fc3910a-00a1-4cb4-b9e1-d094ce340531&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-medkit"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">定期: 牙套</div>
+                            <div class="rec-meta">醫療</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$4000</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;4be86d84-3eb8-4a2e-bfcf-94be2b4a881c&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">購物</div>
+                            <div class="rec-meta">購物</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$99</span>
+                    </div>
+                </div>
+            
+                <div class="record-item" onclick="editRecord(&#39;b8146795-9736-434a-8517-0fb4701ad038&#39;)">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">衣服</div>
+                            <div class="rec-meta">購物</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt expense">-$845</span>
+                    </div>
+                </div>
+            </div></div>
+</div>
+
+<!-- ================= 彈出式輸入視窗 (Modal) ================= -->
+<div id="inputModal" class="modal-overlay" onclick="closeInputModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <div class="modal-header">
+            <div class="modal-title" id="modalTitle">新增支出</div>
+            <i class="fas fa-times close-modal" onclick="closeInputModal()"></i>
+        </div>
+
+        <span class="input-label">金額 (可算式: 200-20)</span>
+        <input type="text" id="amount" placeholder="0" inputmode="decimal" onblur="calculateAmount(this)">
+
+        <span class="input-label">細項名稱 (選填)</span>
+        <input type="text" id="note" placeholder="例如：早餐、計程車">
+        
+        <div class="input-label">
+            <span>選擇分類</span>
+            <button id="sortToggleBtn" class="sort-btn" onclick="toggleSortMode()">
+                <i class="fas fa-sort"></i> 排序
+            </button>
+        </div>
+        <div id="categoryGrid" class="category-grid"></div>
+        <input type="hidden" id="selectedCategoryVal">
+
+        <span class="input-label">日期</span>
+        <input type="date" id="datePicker">
+
+        <button id="saveBtn" class="btn-save" onclick="saveData()">儲存</button>
+        <button id="deleteRecordBtn" class="btn-save btn-delete-record d-none" onclick="deleteCurrentRecord()">刪除此筆</button>
+    </div>
+</div>
+
+<!-- ================= 頁面 2: 圖表分析 ================= -->
+<div id="page-chart" class="page">
+    <div class="card">
+        <h3 style="text-align:center; margin:0 0 15px 0;">收支統計</h3>
+        
+        <div class="chart-filter">
+            <input type="month" id="chartStartMonth">
+            <span style="color:#999">至</span>
+            <input type="month" id="chartEndMonth">
+            <button onclick="renderChartPage()" style="width:auto; padding:5px 12px; background:var(--primary); color:white; border:none; border-radius:8px; margin:0; font-weight:bold;">更新</button>
+        </div>
+
+        <!-- 統計佈局：圓餅圖(左) + 數據(右) -->
+        <div class="chart-layout">
+            <div class="chart-box">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="summary-col">
+                <div class="summary-card">
+                    <div class="sc-label">總收入</div>
+                    <div class="sc-val" id="chartTotalInc" style="color:var(--income)">$0</div>
+                </div>
+                <div class="summary-card">
+                    <div class="sc-label">總支出</div>
+                    <div class="sc-val" id="chartTotalExp" style="color:var(--expense)">$0</div>
+                </div>
+                <div class="summary-card">
+                    <div class="sc-label">總結餘</div>
+                    <div class="sc-val" id="chartTotalBal" style="color:var(--primary)">$0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align:center; font-size:12px; color:#999; margin-bottom:15px;"><i class="fas fa-hand-pointer"></i> 點擊列表查看明細</div>
+
+        <!-- 詳細比率列表 (手風琴) -->
+        <div id="chartLegend" class="stat-list"></div>
+    </div>
+</div>
+
+<!-- ================= 頁面 3: 定期記帳 ================= -->
+<div id="page-recurring" class="page">
+    <div id="recur-card" class="card" style="border-left: 5px solid var(--primary);">
+        <h3 style="margin-top:0"><i class="fas fa-sync-alt" style="color:var(--primary)"></i> 定期/分期記帳</h3>
+        
+        <!-- 模式選擇 -->
+        <div class="recur-mode-switch">
+            <div class="mode-option active" id="mode-ongoing" onclick="setRecurMode(&#39;ongoing&#39;)">
+                <i class="fas fa-infinity"></i> 固定 (直到取消)
+            </div>
+            <div class="mode-option" id="mode-installment" onclick="setRecurMode(&#39;installment&#39;)">
+                <i class="fas fa-list-ol"></i> 分期 (固定期數)
+            </div>
+        </div>
+
+        <span class="input-label">名稱 (如: 手機費、分期電腦)</span>
+        <input type="text" id="recName">
+        
+        <span class="input-label">類型</span>
+        <select id="recType" onchange="renderRecurCategoryGrid(this.value)">
+            <option value="expense">支出</option>
+            <option value="income">收入</option>
+        </select>
+
+        <span class="input-label">選擇分類</span>
+        <div id="recurCategoryGrid" class="category-grid"><div class="cat-item active" data-type="expense"><i class="fas fa-utensils"></i><span>餐飲</span></div><div class="cat-item" data-type="expense"><i class="fas fa-car"></i><span>交通</span></div><div class="cat-item" data-type="expense"><i class="fas fa-shopping-bag"></i><span>購物</span></div><div class="cat-item" data-type="expense"><i class="fas fa-home"></i><span>居住</span></div><div class="cat-item" data-type="expense"><i class="fas fa-gamepad"></i><span>娛樂</span></div><div class="cat-item" data-type="expense"><i class="fas fa-medkit"></i><span>醫療</span></div><div class="cat-item" data-type="expense"><i class="fas fa-book"></i><span>教育</span></div><div class="cat-item" data-type="expense"><i class="fas fa-mobile-alt"></i><span>通訊</span></div><div class="cat-item" data-type="expense"><i class="fas fa-plane"></i><span>旅行</span></div><div class="cat-item" data-type="expense"><i class="fas fa-tshirt"></i><span>治裝</span></div><div class="cat-item" data-type="expense"><i class="fas fa-paw"></i><span>寵物</span></div><div class="cat-item" data-type="expense"><i class="fas fa-gem"></i><span>美容</span></div><div class="cat-item" data-type="expense"><i class="fas fa-chart-line"></i><span>投資</span></div><div class="cat-item" data-type="expense"><i class="fas fa-ellipsis-h"></i><span>其他</span></div></div>
+        <input type="hidden" id="selectedRecurCategoryVal" value="餐飲">
+
+        <span class="input-label">每月執行日 (1-31)</span>
+        <input type="number" id="recDay" placeholder="例如: 5" min="1" max="31">
+        
+        <!-- 固定模式輸入 -->
+        <div id="input-ongoing">
+            <span class="input-label">每月金額</span>
+            <input type="number" id="recAmount">
+        </div>
+
+        <!-- 分期模式輸入 -->
+        <div id="input-installment" class="d-none">
+            <!-- 新增選填模式切換 -->
+            <div style="margin: 15px 0 10px 0; display:flex; gap:15px; font-size:14px; align-items:center;">
+                <label style="cursor:pointer; display:flex; align-items:center;"><input type="radio" name="instCalcType" value="total" checked="" onchange="toggleInstInput()" style="width:auto; margin-right:5px;"> 輸入總金額</label>
+                <label style="cursor:pointer; display:flex; align-items:center;"><input type="radio" name="instCalcType" value="period" onchange="toggleInstInput()" style="width:auto; margin-right:5px;"> 輸入每期金額</label>
+            </div>
+
+            <div id="box-inst-total">
+                <span class="input-label">總金額 (系統自動算每期)</span>
+                <input type="number" id="recTotalAmount" placeholder="例如: 30000">
+            </div>
+
+            <div id="box-inst-period" class="d-none">
+                <span class="input-label">每期金額 (系統自動算總額)</span>
+                <input type="number" id="recPerPeriodAmount" placeholder="例如: 1000">
+            </div>
+
+            <span class="input-label">分幾期</span>
+            <input type="number" id="recPeriods" placeholder="例如: 12">
+            
+            <div style="font-size:12px; color:#666; margin-top:5px; background:#f0f0f0; padding:8px; border-radius:8px;">
+                <i class="fas fa-calculator"></i> 說明：除不盡的餘數將自動加在第一期。
+            </div>
+        </div>
+        
+        <button id="btn-recur-save" class="btn-save" onclick="saveRecurringRule()" style="margin-top:15px;">新增規則 (存入雲端)</button>
+        <button id="btn-recur-cancel" class="btn-save btn-delete-record d-none" onclick="resetEditRuleMode()">取消編輯</button>
+    </div>
+    
+    <h4 style="margin-left:10px; color:#666; font-size:14px;">執行中的規則 (雲端)</h4>
+    <div id="recurringList">
+                <div class="record-item recurring-rule">
+                    <div style="flex:1">
+                        <div style="font-weight:bold">
+                           <i class="fas fa-gem" style="color:#999; margin-right:5px;"></i> 學貸 
+                           <span class="rule-badge">支出</span> <span class="rule-badge" style="background:#e3f2fd;color:#1565C0">分期</span>
+                        </div>
+                        <div style="font-size:12px; color:#666">$259308 (分 54 期) • 進度: 0/54 • 下次: 2026-02-01(日)</div>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:10px;">
+                         <i class="fas fa-edit edit-btn" onclick="editRule(&#39;9080b62e-a3c8-4ecf-bc61-c2fd4e06b0e6&#39;)"></i>
+                        <i class="fas fa-trash del-btn" onclick="deleteRule(&#39;9080b62e-a3c8-4ecf-bc61-c2fd4e06b0e6&#39;)"></i>
+                    </div>
+                </div>
+            
+                <div class="record-item recurring-rule">
+                    <div style="flex:1">
+                        <div style="font-weight:bold">
+                           <i class="fas fa-gem" style="color:#999; margin-right:5px;"></i> 牙套 
+                           <span class="rule-badge">支出</span> <span class="rule-badge">固定</span>
+                        </div>
+                        <div style="font-size:12px; color:#666">$4000/月 • 下次: 2026-01-31(六)</div>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:10px;">
+                         <i class="fas fa-edit edit-btn" onclick="editRule(&#39;98271c93-feb8-4af0-b257-e16d50d730b4&#39;)"></i>
+                        <i class="fas fa-trash del-btn" onclick="deleteRule(&#39;98271c93-feb8-4af0-b257-e16d50d730b4&#39;)"></i>
+                    </div>
+                </div>
+            
+                <div class="record-item recurring-rule">
+                    <div style="flex:1">
+                        <div style="font-weight:bold">
+                           <i class="fas fa-chart-line" style="color:#999; margin-right:5px;"></i> 信貸 
+                           <span class="rule-badge">支出</span> <span class="rule-badge">固定</span>
+                        </div>
+                        <div style="font-size:12px; color:#666">$7305/月 • 下次: 2026-02-01(日)</div>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:10px;">
+                         <i class="fas fa-edit edit-btn" onclick="editRule(&#39;255bc84e-32b4-4d08-8879-74305df9a3c3&#39;)"></i>
+                        <i class="fas fa-trash del-btn" onclick="deleteRule(&#39;255bc84e-32b4-4d08-8879-74305df9a3c3&#39;)"></i>
+                    </div>
+                </div>
+            </div>
+</div>
+
+<!-- ================= 底部導航 ================= -->
+<div class="bottom-nav">
+    <div class="nav-btn active" onclick="switchPage(&#39;home&#39;, this)">
+        <i class="fas fa-list-alt"></i> 記帳
+    </div>
+    <div class="nav-btn" onclick="switchPage(&#39;chart&#39;, this)">
+        <i class="fas fa-chart-pie"></i> 統計
+    </div>
+    <div class="nav-btn" onclick="switchPage(&#39;recurring&#39;, this)">
+        <i class="fas fa-clock"></i> 定期
+    </div>
+</div>
+
+<script>
+    // 🔴 請填入您的 Google Apps Script 網址 🔴
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx2TAVzM8TpNrsJfi5gft3SlxiA1AJPJVyKBwlelxutNyPMl5Fq9vwLAQYX2UVODBfe/exec"; 
+
+    // 全域變數
+    let currentType = 'expense';
+    let records = [];         
+    let recurringRules = [];  
+    let currentRecurMode = 'ongoing'; 
+    let editingRuleId = null; 
+    let editingRecordId = null; 
+    let currentChartFilteredData = [];
+    let isSortMode = false;
+    let sortableInstance = null; 
+    
+    const defaultCategories = {
+        expense: [
+            {name: "餐飲", icon: "fa-utensils"},
+            {name: "交通", icon: "fa-car"},
+            {name: "購物", icon: "fa-shopping-bag"},
+            {name: "居住", icon: "fa-home"},
+            {name: "娛樂", icon: "fa-gamepad"},
+            {name: "醫療", icon: "fa-medkit"},
+            {name: "教育", icon: "fa-book"},
+            {name: "通訊", icon: "fa-mobile-alt"},
+            {name: "旅行", icon: "fa-plane"},
+            {name: "治裝", icon: "fa-tshirt"}, 
+            {name: "寵物", icon: "fa-paw"},
+            {name: "美容", icon: "fa-gem"},
+            {name: "投資", icon: "fa-chart-line"},
+            {name: "其他", icon: "fa-ellipsis-h"}
+        ],
+        income: [
+            {name: "薪水", icon: "fa-money-bill-wave"},
+            {name: "獎金", icon: "fa-gift"},
+            {name: "投資", icon: "fa-chart-line"},
+            {name: "兼職", icon: "fa-hand-holding-usd"},
+            {name: "其他", icon: "fa-coins"}
+        ]
+    };
+
+    let categories = JSON.parse(JSON.stringify(defaultCategories)); 
+
+    const days = ['日', '一', '二', '三', '四', '五', '六']; 
+
+    function getLocalTodayStr() {
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = String(now.getMonth() + 1).padStart(2, '0');
+        const d = String(now.getDate()).padStart(2, '0');
+        return `${y}-${m}-${d}`;
+    }
+
+    function getLocalMonthStr() {
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = String(now.getMonth() + 1).padStart(2, '0');
+        return `${y}-${m}`;
+    }
+
+    // 初始化
+    initApp();
+
+    async function initApp() {
+        document.getElementById('datePicker').value = getLocalTodayStr();
+        const currentMonth = getLocalMonthStr();
+        document.getElementById('monthFilter').value = currentMonth;
+        
+        const currentYear = new Date().getFullYear();
+        document.getElementById('chartStartMonth').value = `${currentYear}-01`;
+        document.getElementById('chartEndMonth').value = currentMonth;
+
+        checkMode();
+        loadCategoriesOrder(); 
+        renderRecurCategoryGrid('expense');
+        
+        await loadAllData(); 
+        checkLocalMigration();
+        checkAndRunRecurring();
+    }
+
+    function checkMode() {
+        const badge = document.getElementById('modeBadge');
+        const alertBox = document.getElementById('setup-alert');
+        if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL.startsWith('http')) {
+            badge.innerText = "雲端同步";
+            badge.className = "mode-badge mode-cloud";
+            alertBox.style.display = 'none';
+        } else {
+            badge.innerText = "本機模式";
+            badge.className = "mode-badge mode-local";
+        }
+    }
+
+    function switchPage(pid, el) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.getElementById('page-'+pid).classList.add('active');
+        document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+        el.classList.add('active');
+        if(pid === 'chart') renderChartPage();
+    }
+
+    function formatDateWithDay(dateStr) {
+        if (!dateStr) return "";
+        let cleanDate = dateStr;
+        if (typeof dateStr === 'string' && dateStr.length > 10) {
+            cleanDate = dateStr.substring(0, 10);
+        }
+        
+        const parts = cleanDate.split('-');
+        if (parts.length === 3) {
+            const y = parseInt(parts[0]);
+            const m = parseInt(parts[1]) - 1;
+            const d = parseInt(parts[2]);
+            
+            const dateObj = new Date(y, m, d);
+            if (!isNaN(dateObj.getTime())) {
+                const dayChar = days[dateObj.getDay()];
+                return `${cleanDate}(${dayChar})`;
+            }
+        }
+        return cleanDate;
+    }
+
+    // --- 分類排序功能 ---
+    function loadCategoriesOrder() {
+        const saved = localStorage.getItem('category_order');
+        if (saved) {
+            try {
+                categories = JSON.parse(saved);
+            } catch(e) { console.warn("分類載入失敗，重置"); }
+        }
+    }
+
+    window.toggleSortMode = function() {
+        isSortMode = !isSortMode;
+        const btn = document.getElementById('sortToggleBtn');
+        const grid = document.getElementById('categoryGrid');
+        
+        if (isSortMode) {
+            btn.classList.add('active');
+            btn.innerHTML = '<i class="fas fa-check"></i> 完成';
+            grid.classList.add('sorting');
+            
+            sortableInstance = new Sortable(grid, {
+                animation: 150,
+                ghostClass: 'sortable-ghost',
+                onEnd: function (evt) {
+                    const newOrder = [];
+                    const items = grid.querySelectorAll('.cat-item');
+                    items.forEach(item => {
+                        const name = item.querySelector('span').innerText;
+                        const original = categories[currentType].find(c => c.name === name);
+                        if(original) newOrder.push(original);
+                    });
+                    categories[currentType] = newOrder;
+                    localStorage.setItem('category_order', JSON.stringify(categories));
+                }
+            });
+        } else {
+            btn.classList.remove('active');
+            btn.innerHTML = '<i class="fas fa-sort"></i> 排序';
+            grid.classList.remove('sorting');
+            if (sortableInstance) {
+                sortableInstance.destroy();
+                sortableInstance = null;
+            }
+            openInputModal(currentType); 
+        }
+    }
+
+    // --- 分期輸入切換 (New Feature) ---
+    window.toggleInstInput = function() {
+        const type = document.querySelector('input[name="instCalcType"]:checked').value;
+        if(type === 'total') {
+            document.getElementById('box-inst-total').classList.remove('d-none');
+            document.getElementById('box-inst-period').classList.add('d-none');
+        } else {
+            document.getElementById('box-inst-total').classList.add('d-none');
+            document.getElementById('box-inst-period').classList.remove('d-none');
+        }
+    }
+
+    // --- 彈窗 (Modal) 控制 ---
+    window.openInputModal = function(type, record = null) {
+        document.getElementById('inputModal').classList.add('open');
+        currentType = type;
+        
+        if(isSortMode) toggleSortMode();
+
+        const title = record ? "編輯帳目" : (type === 'expense' ? "新增支出" : "新增收入");
+        document.getElementById('modalTitle').innerText = title;
+        document.getElementById('modalTitle').style.color = type === 'expense' ? 'var(--expense)' : 'var(--income)';
+
+        const grid = document.getElementById('categoryGrid');
+        grid.innerHTML = '';
+        const list = categories[type];
+        
+        list.forEach((cat, index) => {
+            let item = document.createElement('div');
+            item.className = 'cat-item';
+            item.dataset.type = type;
+            if(!isSortMode) item.onclick = () => selectCategory(item, cat.name);
+            
+            if (record && record.category === cat.name) {
+                setTimeout(() => item.click(), 0);
+            } else if (!record && index === 0) {
+                setTimeout(() => item.click(), 0);
+            }
+
+            item.innerHTML = `<i class="fas ${cat.icon}"></i><span>${cat.name}</span>`;
+            grid.appendChild(item);
+        });
+
+        const saveBtn = document.getElementById('saveBtn');
+        saveBtn.style.background = type === 'expense' ? 'var(--expense)' : 'var(--income)';
+
+        if (record) {
+            editingRecordId = record.id;
+            document.getElementById('amount').value = record.amount;
+            document.getElementById('note').value = record.note || "";
+            let cleanDate = record.date;
+            if(cleanDate.length > 10) cleanDate = cleanDate.substring(0, 10);
+            document.getElementById('datePicker').value = cleanDate; 
+            
+            saveBtn.innerText = "儲存修改";
+            document.getElementById('deleteRecordBtn').classList.remove('d-none');
+        } else {
+            editingRecordId = null;
+            document.getElementById('amount').value = '';
+            document.getElementById('note').value = '';
+            document.getElementById('datePicker').value = getLocalTodayStr();
+            saveBtn.innerText = "儲存";
+            document.getElementById('deleteRecordBtn').classList.add('d-none');
+        }
+    }
+
+    window.closeInputModal = function(event) {
+        if (event && event.target !== document.getElementById('inputModal') && !event.target.classList.contains('close-modal')) return;
+        document.getElementById('inputModal').classList.remove('open');
+    }
+
+    function selectCategory(el, catName) {
+        document.querySelectorAll('#categoryGrid .cat-item').forEach(i => i.classList.remove('active'));
+        el.classList.add('active');
+        document.getElementById('selectedCategoryVal').value = catName;
+    }
+
+    window.calculateAmount = function(input) {
+        let val = input.value.trim();
+        if(!val) return;
+        if(/^[0-9+\-*/.()\s]+$/.test(val)) {
+            try {
+                const result = new Function('return ' + val)();
+                input.value = Math.round(result * 100) / 100;
+            } catch(e) { console.warn("算式錯誤"); }
+        }
+    }
+
+    function renderRecurCategoryGrid(type) {
+        const grid = document.getElementById('recurCategoryGrid');
+        grid.innerHTML = '';
+        const list = categories[type];
+        list.forEach((cat, index) => {
+            let item = document.createElement('div');
+            item.className = 'cat-item';
+            item.dataset.type = type;
+            item.onclick = () => selectRecurCategory(item, cat.name);
+            if (index === 0) setTimeout(() => selectRecurCategory(item, cat.name), 0);
+            item.innerHTML = `<i class="fas ${cat.icon}"></i><span>${cat.name}</span>`;
+            grid.appendChild(item);
+        });
+    }
+
+    function selectRecurCategory(el, catName) {
+        document.querySelectorAll('#recurCategoryGrid .cat-item').forEach(i => i.classList.remove('active'));
+        el.classList.add('active');
+        document.getElementById('selectedRecurCategoryVal').value = catName;
+    }
+
+    function getIconForCategory(catName) {
+        // Search all categories
+        for (let type in categories) {
+            let found = categories[type].find(c => c.name === catName);
+            if (found) return found.icon;
+        }
+        return "fa-tag"; 
+    }
+
+    function setLoading(isLoading) {
+        document.getElementById('loadingBar').style.display = isLoading ? 'block' : 'none';
+        const btns = document.querySelectorAll('button');
+        btns.forEach(b => b.disabled = isLoading);
+    }
+
+    // --- 核心資料操作 ---
+    async function loadAllData() {
+        setLoading(true);
+        let allData = [];
+
+        if (GOOGLE_SCRIPT_URL) {
+            try {
+                const res = await fetch(GOOGLE_SCRIPT_URL + "?action=get");
+                const json = await res.json();
+                if(json.status === 'success') allData = json.data;
+            } catch (e) {
+                console.error(e);
+                alert("雲端讀取失敗");
+            }
+        } else {
+            const local = localStorage.getItem('my_expenses');
+            if (local) allData = JSON.parse(local);
+        }
+
+        records = [];
+        recurringRules = [];
+
+        allData.forEach(row => {
+            // ★ 日期智慧修復
+            if (typeof row.date === 'string' && row.date.includes('T')) {
+                const dateObj = new Date(row.date);
+                const y = dateObj.getFullYear();
+                const m = String(dateObj.getMonth() + 1).padStart(2, '0');
+                const d = String(dateObj.getDate()).padStart(2, '0');
+                row.date = `${y}-${m}-${d}`;
+            }
+
+            if (row.date === "RECURRING") {
+                try {
+                    let rule = JSON.parse(row.note);
+                    rule.id = row.id; 
+                    if (rule.nextRunDateStr && rule.nextRunDateStr.includes('T')) {
+                        rule.nextRunDateStr = rule.nextRunDateStr.substring(0, 10);
+                    }
+                    recurringRules.push(rule);
+                } catch(e) { console.warn("解析規則失敗", row); }
+            } else {
+                records.push(row);
+            }
+        });
+
+        renderWithFilter();
+        renderRecurringList();
+        setLoading(false);
+    }
+
+    async function saveData() {
+        calculateAmount(document.getElementById('amount'));
+        
+        const amt = document.getElementById('amount').value;
+        const note = document.getElementById('note').value;
+        const cat = document.getElementById('selectedCategoryVal').value;
+        const date = document.getElementById('datePicker').value;
+        
+        if (!amt) return alert("請輸入金額");
+        if (!cat) return alert("請選擇分類");
+
+        if (editingRecordId) {
+            await deleteItem(editingRecordId, true); 
+            await createRecord(date, currentType, Number(amt), cat, note);
+            alert("修改成功！");
+        } else {
+            await createRecord(date, currentType, Number(amt), cat, note);
+        }
+        closeInputModal();
+    }
+
+    window.deleteCurrentRecord = async function() {
+        if(!editingRecordId) return;
+        await deleteItem(editingRecordId);
+        closeInputModal();
+    }
+
+    async function createRecord(date, type, amount, category, note, skipReload = false) {
+        const newRecord = {
+            id: Date.now().toString() + Math.random().toString(36).substr(2, 5),
+            date: date,
+            type: type,
+            amount: amount,
+            category: category,
+            note: note
+        };
+
+        setLoading(true);
+        if (GOOGLE_SCRIPT_URL) {
+            try {
+                await fetch(GOOGLE_SCRIPT_URL + "?action=add", {
+                    method: 'POST',
+                    body: JSON.stringify(newRecord)
+                });
+                if (!skipReload) await loadAllData(); 
+            } catch (e) {
+                alert("雲端儲存失敗: " + e);
+                setLoading(false);
+                throw e; 
+            }
+        } else {
+            records.unshift(newRecord);
+            localStorage.setItem('my_expenses', JSON.stringify(records));
+            if (!skipReload) renderWithFilter();
+            setLoading(false);
+        }
+    }
+
+    async function deleteItem(id, skipReload = false) {
+        if(!skipReload && !confirm("確定刪除？")) return;
+        
+        setLoading(true);
+        if (GOOGLE_SCRIPT_URL) {
+            try {
+                await fetch(GOOGLE_SCRIPT_URL + "?action=delete&id=" + id);
+                if(!skipReload) await loadAllData();
+                else setLoading(false);
+            } catch(e) { alert("刪除失敗"); setLoading(false); }
+        } else {
+            records = records.filter(r => r.id !== id);
+            localStorage.setItem('my_expenses', JSON.stringify(records));
+            if(!skipReload) renderWithFilter();
+            setLoading(false);
+        }
+    }
+
+    window.editRecord = function(id) {
+        const rec = records.find(r => r.id === id);
+        if (!rec) return;
+        openInputModal(rec.type, rec);
+    }
+
+    window.renderWithFilter = function() {
+        const selectedMonth = document.getElementById('monthFilter').value;
+        const filteredRecords = records.filter(r => r.date.startsWith(selectedMonth));
+        renderList(filteredRecords);
+    }
+
+    // ★ 列表渲染 (Drag Sort & Date Update) ★
+    function renderList(dataToRender) {
+        const list = document.getElementById('list');
+        list.innerHTML = '';
+        let exp = 0, inc = 0;
+        
+        if(dataToRender.length === 0) {
+            list.innerHTML = '<div style="text-align:center; padding:20px; color:#999;">本月尚無資料</div>';
+            return;
+        }
+
+        dataToRender.sort((a,b) => new Date(b.date) - new Date(a.date));
+
+        let lastDate = "";
+        let currentGroup = null;
+
+        dataToRender.forEach(r => {
+            if (r.type === 'expense') exp += Number(r.amount);
+            else inc += Number(r.amount);
+            
+            // Clean date
+            let cleanRDate = r.date;
+            if(r.date.length > 10) cleanRDate = r.date.substring(0, 10);
+
+            if (cleanRDate !== lastDate) {
+                lastDate = cleanRDate;
+                const formattedDate = formatDateWithDay(cleanRDate);
+                
+                const dateHeader = document.createElement('div');
+                dateHeader.className = 'date-header';
+                dateHeader.innerHTML = `<span>${formattedDate}</span>`;
+                list.appendChild(dateHeader);
+                
+                currentGroup = document.createElement('div');
+                currentGroup.className = 'record-group';
+                currentGroup.dataset.date = cleanRDate; // For Sortable
+                list.appendChild(currentGroup);
+
+                // Init Sortable for this group
+                new Sortable(currentGroup, {
+                    group: 'shared-records',
+                    animation: 150,
+                    handle: '.drag-handle',
+                    ghostClass: 'sortable-ghost',
+                    onEnd: function (evt) {
+                        const itemEl = evt.item;
+                        const id = itemEl.getAttribute('onclick').match(/'([^']+)'/)[1];
+                        const newDate = evt.to.dataset.date;
+                        const oldDate = evt.from.dataset.date;
+
+                        if (newDate && newDate !== oldDate) {
+                            if(confirm(`確定將此筆帳目移動到 ${newDate} 嗎？`)) {
+                                updateRecordDate(id, newDate);
+                            } else {
+                                renderWithFilter();
+                            }
+                        }
+                    }
+                });
+            }
+
+            const color = r.type === 'expense' ? 'expense' : 'income';
+            const sign = r.type === 'expense' ? '-' : '+';
+            const iconClass = getIconForCategory(r.category);
+            const displayName = r.note ? r.note : r.category; 
+
+            const itemHtml = `
+                <div class="record-item" onclick="editRecord('${r.id}')">
+                    <div style="display:flex; align-items:center; flex:1;">
+                        <div class="drag-handle" onclick="event.stopPropagation()">
+                            <i class="fas fa-grip-vertical"></i>
+                        </div>
+                        <div class="rec-icon"><i class="fas ${iconClass}"></i></div>
+                        <div class="rec-info">
+                            <div class="rec-name">${displayName}</div>
+                            <div class="rec-meta">${r.category}</div>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items:center;">
+                        <span class="amt ${color}">${sign}$${r.amount}</span>
+                    </div>
+                </div>
+            `;
+            currentGroup.innerHTML += itemHtml;
+        });
+
+        document.getElementById('totalExp').innerText = '$' + exp;
+        document.getElementById('totalInc').innerText = '$' + inc;
+        
+        const bal = inc - exp;
+        const balEl = document.getElementById('totalBal');
+        balEl.innerText = (bal >= 0 ? '+' : '') + '$' + bal;
+        balEl.style.color = bal >= 0 ? 'var(--income)' : 'var(--expense)';
+    }
+
+    async function updateRecordDate(id, newDate) {
+        const record = records.find(r => r.id === id);
+        if (!record) return;
+        
+        setLoading(true);
+        if (GOOGLE_SCRIPT_URL) {
+            try {
+                await fetch(GOOGLE_SCRIPT_URL + "?action=delete&id=" + id);
+                const newRecord = {...record, date: newDate, id: Date.now().toString()};
+                await fetch(GOOGLE_SCRIPT_URL + "?action=add", {
+                    method: 'POST',
+                    body: JSON.stringify(newRecord)
+                });
+                await loadAllData(); 
+            } catch(e) {
+                alert("移動失敗，請檢查網路");
+                renderWithFilter();
+            }
+        }
+        setLoading(false);
+    }
+
+    // --- 圖表邏輯 (詳記) ---
+    window.renderChartPage = function() {
+        const start = document.getElementById('chartStartMonth').value;
+        const end = document.getElementById('chartEndMonth').value;
+        if (!start || !end) return;
+        
+        currentChartFilteredData = records.filter(r => {
+            const m = r.date.slice(0, 7);
+            return m >= start && m <= end && r.type === 'expense'; 
+        });
+
+        let rangeInc = 0, rangeExp = 0;
+        records.filter(r => {
+            const m = r.date.slice(0, 7);
+            return m >= start && m <= end;
+        }).forEach(r => {
+            if(r.type === 'income') rangeInc += Number(r.amount);
+            else rangeExp += Number(r.amount);
+        });
+        
+        const rangeBal = rangeInc - rangeExp;
+        document.getElementById('chartTotalInc').innerText = '$' + rangeInc;
+        document.getElementById('chartTotalExp').innerText = '$' + rangeExp;
+        const rangeBalEl = document.getElementById('chartTotalBal');
+        rangeBalEl.innerText = (rangeBal >= 0 ? '+' : '') + '$' + rangeBal;
+        rangeBalEl.style.color = rangeBal >= 0 ? 'var(--income)' : 'var(--expense)';
+
+        renderChart(currentChartFilteredData, rangeExp);
+    }
+
+    let expandedCategory = null;
+
+    function renderChart(data, totalExp) {
+        const ctx = document.getElementById('myChart');
+        const legendDiv = document.getElementById('chartLegend');
+        const catMap = {};
+        
+        data.forEach(r => {
+            catMap[r.category] = (catMap[r.category] || 0) + Number(r.amount);
+        });
+        const sortedCats = Object.keys(catMap).sort((a,b) => catMap[b] - catMap[a]); 
+        const values = sortedCats.map(c => catMap[c]);
+        const colors = ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40', '#E7E9ED', '#76A346', '#F7464A', '#46BFBD', '#8D6E63', '#26A69A'];
+
+        let chartStatus = Chart.getChart("myChart"); 
+        if (chartStatus != undefined) chartStatus.destroy();
+
+        if(sortedCats.length === 0) {
+            legendDiv.innerHTML = '<div style="text-align:center;color:#999;padding:20px">無支出資料</div>';
+            return;
+        }
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: { labels: sortedCats, datasets: [{ data: values, backgroundColor: colors, borderWidth: 0 }] },
+            options: { 
+                responsive: true, 
+                maintainAspectRatio: false, 
+                plugins: { legend: { display: false } }
+            }
+        });
+
+        legendDiv.innerHTML = '';
+        sortedCats.forEach((cat, i) => {
+            const amt = catMap[cat];
+            const pct = Math.round((amt / totalExp) * 100);
+            const color = colors[i % colors.length];
+            const iconClass = getIconForCategory(cat);
+
+            const container = document.createElement('div');
+            container.className = 'stat-item-container';
+            
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'stat-item';
+            itemDiv.id = 'stat-item-' + cat;
+            itemDiv.onclick = () => toggleAccordion(cat);
+
+            itemDiv.innerHTML = `
+                <div class="stat-icon" style="background:${color}"><i class="fas ${iconClass}"></i></div>
+                <div class="stat-info">
+                    <div class="stat-row-1">
+                        <span class="stat-name">${cat}</span>
+                        <span class="stat-amount">$${amt} <span style="font-weight:normal;font-size:12px;color:#999">(${pct}%)</span></span>
+                    </div>
+                    <div class="stat-bar-bg">
+                        <div class="stat-bar-fill" style="width:${pct}%; background:${color}"></div>
+                    </div>
+                </div>
+            `;
+            container.appendChild(itemDiv);
+
+            const detailDiv = document.createElement('div');
+            detailDiv.className = 'accordion-content';
+            detailDiv.id = 'detail-' + cat;
+            
+            const catRecords = data.filter(r => r.category === cat).sort((a,b) => new Date(b.date) - new Date(a.date));
+            
+            catRecords.forEach(cr => {
+                const formattedDate = formatDateWithDay(cr.date);
+                const name = cr.note || cr.category;
+                
+                detailDiv.innerHTML += `
+                    <div class="acc-row">
+                        <div class="acc-date">${formattedDate}</div>
+                        <div style="flex:1">${name}</div>
+                        <div style="font-weight:bold">$${cr.amount}</div>
+                    </div>
+                `;
+            });
+
+            container.appendChild(detailDiv);
+            legendDiv.appendChild(container);
+        });
+    }
+
+    window.toggleAccordion = function(catName) {
+        const detailId = 'detail-' + catName;
+        const itemId = 'stat-item-' + catName;
+        const detailEl = document.getElementById(detailId);
+        const itemEl = document.getElementById(itemId);
+
+        if (expandedCategory === catName) {
+            detailEl.style.display = 'none';
+            itemEl.classList.remove('active');
+            expandedCategory = null;
+        } else {
+            if (expandedCategory) {
+                document.getElementById('detail-' + expandedCategory).style.display = 'none';
+                document.getElementById('stat-item-' + expandedCategory).classList.remove('active');
+            }
+            detailEl.style.display = 'block';
+            itemEl.classList.add('active');
+            expandedCategory = catName;
+        }
+    }
+
+    // --- 定期/分期記帳邏輯 ---
+
+    function checkLocalMigration() {
+        if (!GOOGLE_SCRIPT_URL) return;
+        const localRules = localStorage.getItem('recurring_rules');
+        if (localRules && recurringRules.length === 0) {
+            if(confirm("偵測到您手機有舊的定期規則，是否上傳到雲端保存？")) {
+                const rules = JSON.parse(localRules);
+                rules.forEach(r => { createCloudRule(r, true); });
+                alert("移轉完成！請重新整理頁面。");
+                localStorage.removeItem('recurring_rules'); 
+                loadAllData();
+            }
+        }
+    }
+
+    window.setRecurMode = function(mode) {
+        currentRecurMode = mode;
+        document.getElementById('mode-ongoing').className = mode === 'ongoing' ? 'mode-option active' : 'mode-option';
+        document.getElementById('mode-installment').className = mode === 'installment' ? 'mode-option active' : 'mode-option';
+        
+        if (mode === 'ongoing') {
+            document.getElementById('input-ongoing').classList.remove('d-none');
+            document.getElementById('input-installment').classList.add('d-none');
+        } else {
+            document.getElementById('input-ongoing').classList.add('d-none');
+            document.getElementById('input-installment').classList.remove('d-none');
+        }
+    }
+
+    window.saveRecurringRule = async function() {
+        const name = document.getElementById('recName').value;
+        const day = document.getElementById('recDay').value;
+        const type = document.getElementById('recType').value;
+        const category = document.getElementById('selectedRecurCategoryVal').value;
+        
+        if (!name || !day) return alert("請填寫名稱與日期");
+        if (!category) return alert("請選擇分類");
+        if (day < 1 || day > 31) return alert("日期需在 1-31 之間");
+
+        let ruleData = {
+            name: name,
+            day: Number(day),
+            type: type,
+            category: category,
+            mode: currentRecurMode,
+            nextRunDateStr: getNextRunDateStr(Number(day))
+        };
+
+        if (currentRecurMode === 'ongoing') {
+            const amt = document.getElementById('recAmount').value;
+            if (!amt) return alert("請輸入金額");
+            ruleData.amount = Number(amt);
+        } else {
+            const periods = document.getElementById('recPeriods').value;
+            if(!periods) return alert("請輸入期數");
+            
+            const calcType = document.querySelector('input[name="instCalcType"]:checked').value;
+            let finalTotal = 0;
+
+            if (calcType === 'total') {
+                const t = document.getElementById('recTotalAmount').value;
+                if(!t) return alert("請輸入總金額");
+                finalTotal = Number(t);
+            } else {
+                const p = document.getElementById('recPerPeriodAmount').value;
+                if(!p) return alert("請輸入每期金額");
+                finalTotal = Number(p) * Number(periods);
+            }
+            
+            ruleData.totalAmount = finalTotal;
+            ruleData.totalPeriods = Number(periods);
+            ruleData.currentPeriod = 0; 
+        }
+
+        setLoading(true);
+
+        if (editingRuleId) {
+            const oldRule = recurringRules.find(r => r.id === editingRuleId);
+            if (oldRule && oldRule.day === ruleData.day) {
+                ruleData.nextRunDateStr = oldRule.nextRunDateStr; 
+                if(oldRule.mode === 'installment') ruleData.currentPeriod = oldRule.currentPeriod;
+            }
+            await deleteItem(editingRuleId, true); 
+        }
+
+        await createCloudRule(ruleData);
+        alert(editingRuleId ? "規則已更新！" : "規則已新增到雲端！");
+        resetEditRuleMode();
+        await loadAllData();
+        checkAndRunRecurring();
+    }
+
+    async function createCloudRule(ruleData, skipReload = false) {
+        const fakeRecord = {
+            id: Date.now().toString(),
+            date: "RECURRING",
+            type: ruleData.type,
+            amount: 0, 
+            category: "Rule", 
+            note: JSON.stringify(ruleData)
+        };
+
+        if (GOOGLE_SCRIPT_URL) {
+            await fetch(GOOGLE_SCRIPT_URL + "?action=add", {
+                method: 'POST',
+                body: JSON.stringify(fakeRecord)
+            });
+        }
+    }
+
+    window.editRule = function(id) {
+        const rule = recurringRules.find(r => r.id === id);
+        if (!rule) return;
+
+        editingRuleId = id;
+        document.getElementById('recName').value = rule.name;
+        document.getElementById('recDay').value = rule.day;
+        document.getElementById('recType').value = rule.type;
+        
+        renderRecurCategoryGrid(rule.type);
+        setTimeout(() => {
+            const items = document.querySelectorAll('#recurCategoryGrid .cat-item');
+            items.forEach(item => {
+                if (item.innerText.includes(rule.category)) item.click();
+            });
+        }, 50);
+
+        setRecurMode(rule.mode);
+        if (rule.mode === 'ongoing') {
+            document.getElementById('recAmount').value = rule.amount;
+        } else {
+            // Default to total mode for editing unless we want to be fancy
+            document.querySelector('input[name="instCalcType"][value="total"]').checked = true;
+            toggleInstInput();
+            document.getElementById('recTotalAmount').value = rule.totalAmount;
+            document.getElementById('recPeriods').value = rule.totalPeriods;
+        }
+
+        const saveBtn = document.getElementById('btn-recur-save');
+        saveBtn.innerText = "儲存修改";
+        saveBtn.style.background = "#FF9800";
+        document.getElementById('btn-recur-cancel').classList.remove('d-none');
+        document.getElementById('recur-card').classList.add('editing');
+        document.getElementById('recur-card').scrollIntoView({behavior: 'smooth'});
+    }
+
+    window.resetEditRuleMode = function() {
+        editingRuleId = null;
+        document.getElementById('recName').value = '';
+        document.getElementById('recDay').value = '';
+        document.getElementById('recAmount').value = '';
+        document.getElementById('recTotalAmount').value = '';
+        document.getElementById('recPerPeriodAmount').value = '';
+        document.getElementById('recPeriods').value = '';
+        
+        const saveBtn = document.getElementById('btn-recur-save');
+        saveBtn.innerText = "新增規則 (存入雲端)";
+        saveBtn.style.background = "var(--primary)";
+        document.getElementById('btn-recur-cancel').classList.add('d-none');
+        document.getElementById('recur-card').classList.remove('editing');
+    }
+
+    window.deleteRule = async function(id) {
+        if(!confirm("確定從雲端刪除此規則？")) return;
+        await deleteItem(id);
+    }
+
+    function getNextRunDateStr(day) {
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = now.getMonth(); 
+        
+        let d = new Date(y, m, day);
+        if (new Date() > d) {
+            d = new Date(y, m + 1, day);
+        }
+        
+        const yy = d.getFullYear();
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        const dd = String(d.getDate()).padStart(2, '0');
+        return `${yy}-${mm}-${dd}`;
+    }
+
+    function renderRecurringList() {
+        const list = document.getElementById('recurringList');
+        list.innerHTML = '';
+        recurringRules.forEach(r => {
+            const typeText = r.type === 'expense' ? '支出' : '收入';
+            const iconClass = getIconForCategory(r.category); 
+            let detail = "";
+            let modeBadge = "";
+
+            if (r.mode === 'installment') {
+                modeBadge = `<span class="rule-badge" style="background:#e3f2fd;color:#1565C0">分期</span>`;
+                detail = `$${r.totalAmount} (分 ${r.totalPeriods} 期) • 進度: ${r.currentPeriod || 0}/${r.totalPeriods}`;
+            } else {
+                modeBadge = `<span class="rule-badge">固定</span>`;
+                detail = `$${r.amount}/月`;
+            }
+
+            const formattedNextDate = formatDateWithDay(r.nextRunDateStr);
+
+            list.innerHTML += `
+                <div class="record-item recurring-rule">
+                    <div style="flex:1">
+                        <div style="font-weight:bold">
+                           <i class="fas ${iconClass}" style="color:#999; margin-right:5px;"></i> ${r.name} 
+                           <span class="rule-badge">${typeText}</span> ${modeBadge}
+                        </div>
+                        <div style="font-size:12px; color:#666">${detail} • 下次: ${formattedNextDate}</div>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:10px;">
+                         <i class="fas fa-edit edit-btn" onclick="editRule('${r.id}')"></i>
+                        <i class="fas fa-trash del-btn" onclick="deleteRule('${r.id}')"></i>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    async function checkAndRunRecurring() {
+        if (recurringRules.length === 0) return;
+        
+        const todayStr = getLocalTodayStr(); 
+        let hasUpdate = false;
+        let deleteIds = [];
+
+        for (let rule of recurringRules) {
+            if (!rule.nextRunDateStr) continue;
+
+            while (rule.nextRunDateStr <= todayStr) {
+                console.log(`執行定期規則: ${rule.name}`);
+                
+                let amount = 0;
+                let note = "";
+                let category = rule.category || "其他"; 
+
+                if (rule.mode === 'installment') {
+                    const periods = rule.totalPeriods;
+                    const total = rule.totalAmount;
+                    const baseAmt = Math.floor(total / periods);
+                    const remainder = total % periods;
+                    const currentP = rule.currentPeriod || 0;
+
+                    if (currentP === 0) amount = baseAmt + remainder;
+                    else amount = baseAmt;
+                    
+                    note = `分期: ${rule.name} (${currentP + 1}/${periods})`;
+                } else {
+                    amount = rule.amount;
+                    note = `定期: ${rule.name}`;
+                }
+                
+                try {
+                    await createRecord(rule.nextRunDateStr, rule.type, amount, category, note, true);
+                    
+                    if (rule.mode === 'installment') {
+                        rule.currentPeriod = (rule.currentPeriod || 0) + 1;
+                    }
+
+                    const parts = rule.nextRunDateStr.split('-');
+                    const currentRunDate = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+                    currentRunDate.setMonth(currentRunDate.getMonth() + 1);
+                    
+                    const ny = currentRunDate.getFullYear();
+                    const nm = String(currentRunDate.getMonth() + 1).padStart(2, '0');
+                    const nd = String(currentRunDate.getDate()).padStart(2, '0');
+                    rule.nextRunDateStr = `${ny}-${nm}-${nd}`;
+                    
+                    hasUpdate = true;
+
+                    if (rule.mode === 'installment' && rule.currentPeriod >= rule.totalPeriods) {
+                        deleteIds.push(rule.id);
+                        break; 
+                    }
+                } catch (err) {
+                    console.error("補單失敗", err);
+                    break;
+                }
+            }
+        }
+
+        if (hasUpdate) {
+            alert("🔄 正在更新定期帳目狀態...");
+            
+            for (let rule of recurringRules) {
+                if (deleteIds.includes(rule.id)) {
+                    await deleteItem(rule.id, true);
+                } else {
+                    await deleteItem(rule.id, true);
+                    await createCloudRule(rule, true);
+                }
+            }
+
+            await loadAllData();
+            alert("✅ 定期帳目已自動補齊並同步至雲端！");
+        }
+    }
+</script>
+
+
+</body></html>
